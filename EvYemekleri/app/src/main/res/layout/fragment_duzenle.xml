@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="20dp"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/TextView_Kalin"
+            android:text="+90"
+            android:textAlignment="textEnd"/>
+        <EditText
+            android:id="@+id/edtTelNoFD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            style="@style/EditText"
+            android:hint="TelNo"
+            android:maxLength="10"
+            android:inputType="number"
+            />
+
+    </LinearLayout>
+    <EditText
+        android:id="@+id/edtEmailFD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/EditText"
+        android:hint="email"
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btnDegistirFD"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Button"
+        android:background="@drawable/bilesen_genel_button"
+        android:text="DEGİSTİR"/>
+</LinearLayout>

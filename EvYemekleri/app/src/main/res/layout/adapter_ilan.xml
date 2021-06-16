@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+    >
+
+    <TextView
+        android:id="@+id/tvId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"/>
+
+    <ImageView
+        android:id="@+id/imgYemekResimAI"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+
+        />
+    <ImageView
+        android:id="@+id/imgFavori"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_baseline_favorite_border_24"
+        android:layout_alignParentRight="true"
+        android:clickable="true"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:padding="5dp"
+        android:layout_marginTop="100dp">
+
+        <ImageView
+            android:id="@+id/imgYildiz"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/ic_start"
+            />
+        <TextView
+            android:id="@+id/tvYildiz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgYildiz"
+            android:textSize="20sp"
+            android:textColor="#000"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="2dp"/>
+
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tvIlanAd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_below="@+id/imgYemekResimAI"
+        android:padding="10dp"
+        android:textAlignment="center"/>
+
+</RelativeLayout>

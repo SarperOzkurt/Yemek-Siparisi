@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ketsy"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="15dp">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_email2"
+            android:padding="6dp"
+            />
+        <EditText
+            android:id="@+id/edtEmail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            style="@style/EditText"
+            android:hint="email"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/ic_sifre"
+            android:padding="6dp"
+            />
+        <EditText
+            android:id="@+id/edtSifre"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            style="@style/EditText"
+            android:hint="şifre"
+            android:inputType="textPassword"
+            />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/btnGiris"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text="GİRİŞ"
+        style="@style/Button"
+        android:background="@drawable/bilesen_genel_button"
+        android:onClick="onClick"
+        />
+    <TextView
+        android:id="@+id/tvSifreMiUnuttum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Şifre mi unuttum"
+        android:textAlignment="textStart"
+        android:textSize="20sp"
+        android:layout_margin="20dp"
+        android:clickable="true"
+        android:onClick="onClick"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="20dp">
+
+            <TextView
+                android:id="@+id/tv"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Hesabın yok mu?"
+                android:textSize="20sp"/>
+                <TextView
+                    android:id="@+id/tvUyeOl"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Üye Ol"
+                    android:textSize="20sp"
+                    android:layout_marginRight="25dp"
+                    style="@style/KalinYazi"
+                    android:clickable="true"
+                    android:onClick="onClick"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

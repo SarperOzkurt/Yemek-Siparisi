@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UyeEkran"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kişisel Bilgiler"
+        style="@style/TextView_Baslik"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/TextView_Kalin"
+            android:text="+90"
+            android:textAlignment="textEnd"/>
+        <EditText
+            android:id="@+id/edtUETelNo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="9"
+            style="@style/EditText"
+            android:hint="TelNo"
+            android:maxLength="10"
+            android:inputType="number"
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp">
+        <EditText
+            android:id="@+id/edtUEAd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/EditText"
+            android:hint="Ad"/>
+        <EditText
+            android:id="@+id/edtUESoyad"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/EditText"
+            android:hint="Soyad" />
+
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hesap oluştur"
+        style="@style/TextView_Baslik"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp">
+        <ImageView
+            android:id="@+id/imgProifl"
+            android:layout_width="93dp"
+            android:layout_height="93dp"
+            android:background="@drawable/profileicon"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="23dp"
+            android:clickable="true"
+            android:onClick="onClickUyeEkran"
+            />
+        <ImageView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/cerceve"/>
+
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/edtUEEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/EditText"
+        android:hint="email"
+        android:layout_marginBottom="20dp"
+        />
+    <EditText
+        android:id="@+id/edtUEKullaniciAdi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/EditText"
+        android:hint="Kullanıcı Adı"
+        android:layout_marginBottom="20dp"/>
+    <EditText
+        android:id="@+id/edtUESifre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/EditText"
+        android:hint="Sifre"
+        android:layout_marginBottom="20dp"
+        android:inputType="textPassword"
+        />
+    <EditText
+        android:id="@+id/edtUESifreTekrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/EditText"
+        android:hint="Sifre Tekrar"
+        android:layout_marginBottom="20dp"
+        android:inputType="textPassword"
+        />
+    <Button
+        android:id="@+id/btnUyeOl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Button"
+        android:background="@drawable/bilesen_genel_button"
+        android:text="UYE OL"
+        android:onClick="onClickUyeEkran"/>
+    </LinearLayout>
+</ScrollView>

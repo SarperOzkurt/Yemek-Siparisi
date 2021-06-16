@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.activity_bagli_activity.SiparisActivity"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adres"
+        style="@style/TextView_Baslik"/>
+    <TextView
+        android:id="@+id/tvAdres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:textSize="17dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ödeme"
+        style="@style/TextView_Baslik"/>
+
+    <EditText
+        android:id="@+id/edtKartIsim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/EditText"
+        android:hint="Kart üzerindeki isim"
+        android:layout_margin="10dp"
+        android:maxLength="16"
+        />
+    <EditText
+        android:id="@+id/edtKartNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/EditText"
+        android:hint="Kart No"
+        android:layout_margin="10dp"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/edtTarih"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/EditText"
+        android:hint="AA/YY"
+        android:layout_margin="10dp"/>
+    <EditText
+        android:id="@+id/edtCVV"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/EditText"
+        android:hint="CVV"
+        android:layout_margin="10dp"
+        android:maxLength="3"
+        android:inputType="number"/>
+
+    <Button
+        android:id="@+id/btnOnayla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/Button"
+        android:background="@drawable/bilesen_genel_button"
+        android:layout_margin="10dp"
+        android:text="ONAYLA"/>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorLightBlue</item>
+        <item name="colorPrimaryDark">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="EditText">
+
+        <item name="android:backgroundTint"> @color/colorAccent</item>
+        <item name="android:padding">10dp</item>
+    </style>
+
+    <style name="Button">
+
+        <item name="android:textSize">18dp</item>
+        <item name="android:textColor">#FFF</item>
+    </style>
+    <style name="KalinYazi">
+        <item name="android:textColor">@color/colorLightBlue</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+    <style name="TextView_Kalin">
+        <item name="android:textColor">#000</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="TextView_Baslik">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textColor">#000</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:padding">10dp</item>
+    </style>
+    <style name="profil">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#DD2E2C2C</item>
+
+    </style>
+ </resources>
+

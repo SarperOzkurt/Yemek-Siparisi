@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Ketsy</string>
+
+    <string name="Hata_Bos">Boş geçmeyiniz</string>
+
+    <string-array name="odeme">
+
+        <item>Kredi Kartı</item>
+        <item>Elden</item>
+        <item>Her İkiside</item>
+
+    </string-array>
+</resources>
